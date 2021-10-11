@@ -100,9 +100,9 @@ window.onload = function () {
         let row_2_data_1 = document.createElement('td');
         row_2_data_1.innerHTML = "Etapa";
         let row_2_data_2 = document.createElement('td');
-        row_2_data_2.innerHTML = etapaDuration();
+        row_2_data_2.innerHTML = etapaDuration().toFixed(2);
         let row_2_data_3 = document.createElement('td');
-        row_2_data_3.innerHTML = etapaConsumo;
+        row_2_data_3.innerHTML = etapaConsumo.toFixed(2);
 
         row_2.appendChild(row_2_data_1);
         row_2.appendChild(row_2_data_2);
@@ -115,9 +115,9 @@ window.onload = function () {
         let row_3_data_1 = document.createElement('td');
         row_3_data_1.innerHTML = "Alternativa";
         let row_3_data_2 = document.createElement('td');
-        row_3_data_2.innerHTML = alternativeDuration();
+        row_3_data_2.innerHTML = alternativeDuration().toFixed(2);
         let row_3_data_3 = document.createElement('td');
-        row_3_data_3.innerHTML = alternativeConsumo;
+        row_3_data_3.innerHTML = alternativeConsumo.toFixed(2);
 
         row_3.appendChild(row_3_data_1);
         row_3.appendChild(row_3_data_2);
@@ -130,9 +130,9 @@ window.onload = function () {
         let row_4_data_1 = document.createElement('td');
         row_4_data_1.innerHTML = "Reserva";
         let row_4_data_2 = document.createElement('td');
-        row_4_data_2.innerHTML = reservaDuration();
+        row_4_data_2.innerHTML = reservaDuration().toFixed(2);
         let row_4_data_3 = document.createElement('td');
-        row_4_data_3.innerHTML = reservaConsumo;
+        row_4_data_3.innerHTML = reservaConsumo.toFixed(2);
 
         row_4.appendChild(row_4_data_1);
         row_4.appendChild(row_4_data_2);
@@ -145,9 +145,9 @@ window.onload = function () {
         let row_5_data_1 = document.createElement('td');
         row_5_data_1.innerHTML = "Mín. Requerido";
         let row_5_data_2 = document.createElement('td');
-        row_5_data_2.innerHTML = tempoMinRequired();
+        row_5_data_2.innerHTML = tempoMinRequired().toFixed(2);
         let row_5_data_3 = document.createElement('td');
-        row_5_data_3.innerHTML = tempoMinConsumo;
+        row_5_data_3.innerHTML = tempoMinConsumo.toFixed(2);
 
         row_5.appendChild(row_5_data_1);
         row_5.appendChild(row_5_data_2);
@@ -160,9 +160,9 @@ window.onload = function () {
         let row_6_data_1 = document.createElement('td');
         row_6_data_1.innerHTML = "Adicional";
         let row_6_data_2 = document.createElement('td');
-        row_6_data_2.innerHTML = aditionalDuration();
+        row_6_data_2.innerHTML = aditionalDuration().toFixed(2);
         let row_6_data_3 = document.createElement('td');
-        row_6_data_3.innerHTML = aditionalConsumo;
+        row_6_data_3.innerHTML = aditionalConsumo.toFixed(2);
 
         row_6.appendChild(row_6_data_1);
         row_6.appendChild(row_6_data_2);
@@ -175,9 +175,9 @@ window.onload = function () {
         let row_7_data_1 = document.createElement('td');
         row_7_data_1.innerHTML = "Total a Bordo";
         let row_7_data_2 = document.createElement('td');
-        row_7_data_2.innerHTML = totalOnBoard();
+        row_7_data_2.innerHTML = totalOnBoard().toFixed(2);
         let row_7_data_3 = document.createElement('td');
-        row_7_data_3.innerHTML = totalOnConsumo;
+        row_7_data_3.innerHTML = totalOnConsumo.toFixed(2);
 
         row_7.appendChild(row_7_data_1);
         row_7.appendChild(row_7_data_2);
@@ -228,13 +228,13 @@ window.onload = function () {
         }
         //Calculo de peso de decolagem
         let pbv = document.getElementById("pesoBasico");
-        pbv.innerHTML = "Peso Básico vazio: " + pesoBasicoVazio;
+        pbv.innerHTML = "Peso Básico vazio: " + pesoBasicoVazio.toFixed(2);
         let pesoDisp = document.getElementById("pesoDisp");
         pesoDisp.innerHTML = "Peso disponível Total: " + pesoDispTotal().toFixed(2);
         let pesoCombust = document.getElementById("pesoFuel");
-        pesoCombust.innerHTML = "Combustível nos tanques: " + fuelWeight();
+        pesoCombust.innerHTML = "Combustível nos tanques: " + fuelWeight().toFixed(2);
         let pesoCrew = document.getElementById("pesoCrew");
-        pesoCrew.innerHTML = "Peso dos tripulantes: " + tripulantesWeight();
+        pesoCrew.innerHTML = "Peso dos tripulantes: " + tripulantesWeight().toFixed(2);
         let payload = document.getElementById("payloadMax");
         payload.innerHTML = "Payload máximo: " + maxPayload().toFixed(2);
 
@@ -272,9 +272,9 @@ window.onload = function () {
         let row_22_data_1 = document.createElement('td');
         row_22_data_1.innerHTML = "Peso Básico Vazio";
         let row_22_data_2 = document.createElement('td');
-        row_22_data_2.innerHTML = pesoBasicoVazio;
+        row_22_data_2.innerHTML = pesoBasicoVazio.toFixed(2);
         let row_22_data_3 = document.createElement('td');
-        row_22_data_3.innerHTML = planeBraco;
+        row_22_data_3.innerHTML = planeBraco.toFixed(2);
         let row_22_data_4 = document.createElement('td');
         row_22_data_4.innerHTML = momentoPBV.toFixed(2);
 
@@ -290,11 +290,11 @@ window.onload = function () {
         let row_32_data_1 = document.createElement('td');
         row_32_data_1.innerHTML = "Piloto";
         let row_32_data_2 = document.createElement('td');
-        row_32_data_2.innerHTML = pilotWeight;
+        row_32_data_2.innerHTML = pilotWeight.toFixed(2);
         let row_32_data_3 = document.createElement('td');
-        row_32_data_3.innerHTML = pilotBraco;
+        row_32_data_3.innerHTML = pilotBraco.toFixed(2);
         let row_32_data_4 = document.createElement('td');
-        row_32_data_4.innerHTML = momentoPiloto;
+        row_32_data_4.innerHTML = momentoPiloto.toFixed(2);
 
         row_32.appendChild(row_32_data_1);
         row_32.appendChild(row_32_data_2);
@@ -308,11 +308,11 @@ window.onload = function () {
         let row_42_data_1 = document.createElement('td');
         row_42_data_1.innerHTML = "Óleo";
         let row_42_data_2 = document.createElement('td');
-        row_42_data_2.innerHTML = oleoWeight;
+        row_42_data_2.innerHTML = oleoWeight.toFixed(2);
         let row_42_data_3 = document.createElement('td');
-        row_42_data_3.innerHTML = oleoBraco;
+        row_42_data_3.innerHTML = oleoBraco.toFixed(2);
         let row_42_data_4 = document.createElement('td');
-        row_42_data_4.innerHTML = momentoOleo;
+        row_42_data_4.innerHTML = momentoOleo.toFixed(2);
 
         row_42.appendChild(row_42_data_1);
         row_42.appendChild(row_42_data_2);
@@ -326,11 +326,11 @@ window.onload = function () {
         let row_52_data_1 = document.createElement('td');
         row_52_data_1.innerHTML = "Passageiro";
         let row_52_data_2 = document.createElement('td');
-        row_52_data_2.innerHTML = passangerWeight;
+        row_52_data_2.innerHTML = passangerWeight.toFixed(2);
         let row_52_data_3 = document.createElement('td');
-        row_52_data_3.innerHTML = passengerBraco;
+        row_52_data_3.innerHTML = passengerBraco.toFixed(2);
         let row_52_data_4 = document.createElement('td');
-        row_52_data_4.innerHTML = momentoPassanger;
+        row_52_data_4.innerHTML = momentoPassanger.toFixed(2);
 
         row_52.appendChild(row_52_data_1);
         row_52.appendChild(row_52_data_2);
@@ -343,11 +343,11 @@ window.onload = function () {
         let row_62_data_1 = document.createElement('td');
         row_62_data_1.innerHTML = "Combustível";
         let row_62_data_2 = document.createElement('td');
-        row_62_data_2.innerHTML = fuelWeight();
+        row_62_data_2.innerHTML = fuelWeight().toFixed(2);
         let row_62_data_3 = document.createElement('td');
-        row_62_data_3.innerHTML = combustivelBraco;
+        row_62_data_3.innerHTML = combustivelBraco.toFixed(2);
         let row_62_data_4 = document.createElement('td');
-        row_62_data_4.innerHTML = momentoFuel;
+        row_62_data_4.innerHTML = momentoFuel.toFixed(2);
 
         row_62.appendChild(row_62_data_1);
         row_62.appendChild(row_62_data_2);
@@ -361,11 +361,11 @@ window.onload = function () {
         let row_72_data_1 = document.createElement('td');
         row_72_data_1.innerHTML = "Bagageiro";
         let row_72_data_2 = document.createElement('td');
-        row_72_data_2.innerHTML = bagageiroWeight;
+        row_72_data_2.innerHTML = bagageiroWeight.toFixed(2);
         let row_72_data_3 = document.createElement('td');
-        row_72_data_3.innerHTML = bagageiroBraco;
+        row_72_data_3.innerHTML = bagageiroBraco.toFixed(2);
         let row_72_data_4 = document.createElement('td');
-        row_72_data_4.innerHTML = momentoBagageiro;
+        row_72_data_4.innerHTML = momentoBagageiro.toFixed(2);
 
         row_72.appendChild(row_72_data_1);
         row_72.appendChild(row_72_data_2);
