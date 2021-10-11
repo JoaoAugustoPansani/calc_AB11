@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha PB AB11</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <label for="aeronave">Geladeiras Disponíveis</label>
+        <select id="aeronaveSelect" name="aeronave"></select>
+    </div>
+    <br><br>
+    <div class="container">
+        <form class="timeDuration">
+            <label for="Etapa">Duração do Voo</label>
+            <input id="etapaDurationHr" type="number" required> <input id="etapaDurationMin" type="number" required><br>
+            <label for="Alternativa">Alternativa</label>
+            <input id="alternativeDurationHr" type="number" required> <input id="alternativeDurationMin" type="number"
+                required><br>
+            <label for="Reserva">Reserva</label>
+            <input id="reservaDurationHr" type="number" required> <input id="reservaDurationMin" type="number"
+                required><br>
+            <label for="Adicional">Adicional</label>
+            <input id="aditionalDurationHr" type="number" required> <input id="aditionalDurationMin" type="number"
+                required><br>
+            <table id="">
+
+            </table>
+        </form>
+    </div>
+    <br><br>
+    <div class="container">
+        <form class="weightCalc">
+            <label for="Pilot">Peso do Piloto</label>
+            <input class="weightField" type="number" id="pilotWeight" name="Pilot" required><br>
+            <label for="Passenger">Peso do Passageiro</label>
+            <input class="weightField" type="number" id="passengerWeight" name="Passenger" required><br>
+            <label for="Bagageiro">Peso do Bagageiro</label>
+            <input class="weightField" type="number" id="bagageiroWeight" name="Bagageiro" required><br><br>
+            <input type="button" id="submitWeight" value="Peso e Balanceamento">
+        </form>
+    </div>
+    <br><br>
+    <div class="table" id="body">
+    </div>
+    <br><br>
+    <div>
+        <p id="pesoBasico"></p>
+        <p id="pesoDisp"></p>
+        <p id="pesoFuel"></p>
+        <p id="pesoCrew"></p>
+        <p id="payloadMax"></p>
+    </div>
+    <br><br>
+    <div class="table" id="secondTable">
+    </div><br>
+    <p id="alert"></p>
+</body>
+
+</html>
