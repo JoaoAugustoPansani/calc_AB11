@@ -1,5 +1,5 @@
 <h1 align="center">
-    React Players
+    Weight and Balancement Calculator
 </h1>
 
 
